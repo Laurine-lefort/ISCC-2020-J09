@@ -25,5 +25,23 @@
         include ("connexion.php");
     }
     ?>
+<?php
+    if(array_key_exists('id',$_SESSION)){
+    echo'Login: '.$_SESSION ['id']; 
+    }
+    if(array_key_exists('id',$_SESSION)){
+        
+    }
+   else{
+       if($_COOKIE['id']) {
+        $_SESSION['id']=$_COOKIE['id'];    
+       }
+       else {
+        echo"<p><a href='http://localhost:8888/ISCC-2020/ISCC-2020-J09/EX-01/connexion.php?page=connexion'>Revenir à page de connexion</a>";
+    }
+   }
+
+  
+?>
 </body>
 </html>
