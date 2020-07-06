@@ -2,9 +2,12 @@
     $login=$_POST ['login'];
     $password=$_POST['password'];
 
-    if(isset($_POST['password']) AND $_POST['password'] == "2020"){
-        echo'<p>Login : '.$login.'</p>';
-        echo'<p>Password : '.$password.'</p>';
+    if ($password == "2020"){
+        session_start();
+        $_SESSION['id']= $login;
+        header('Location: http://localhost:8888/ISCC-2020/ISCC-2020-J08/EX_01/mini-site-routing.php?page=1');
+        exit();
+
     }
 
    else{
