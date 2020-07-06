@@ -9,5 +9,6 @@
 
    else{
         echo'<p>Mauvais couple identifiant / mot de passe.</p>';
+        echo'<p> <a href="http://localhost:8888/ISCC-2020/ISCC-2020-J09/EX-01/connexion.php?page=connexion">Page connexion</a>';
     }
     ?>
